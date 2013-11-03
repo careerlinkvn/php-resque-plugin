@@ -1,8 +1,8 @@
 {
-    "name": "jaaprood/php-resque-plugin",
+    "name": "careerlinkvn/php-resque-plugin",
     "description": "A plugin architecture for php-resque",
     "require": {
-        "chrisboulton/php-resque": "dev-master"
+        "careerlinkvn/php-resque": "1.2.1"
     },
     "license": "MIT",
     "authors": [
@@ -13,7 +13,7 @@
     ],
     "autoload": {
         "psr-0": {
-            "Resque": "lib/"
+            "ResquePlugin": "lib/"
         }
     }
 }

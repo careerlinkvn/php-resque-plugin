@@ -1,6 +1,7 @@
 <?php
 
-namespace Resque;
+namespace ResquePlugin;
+
 use \Resque_Event;
 use \Resque_Job;
 use \Exception;
@@ -102,7 +103,8 @@ class Plugin {
 	 */
 	public static function createInstances($job) {
 		$instances = array();
-		$jobClass = $job->getClass();
+		//$jobClass = $job->getClass();
+		$jobClass = $job->payload['class'];
 
 		if (property_exists($jobClass, 'resquePlugins')) {
 			$pluginClasses = $jobClass::$resquePlugins;
