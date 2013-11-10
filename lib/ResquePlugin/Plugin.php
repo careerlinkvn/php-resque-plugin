@@ -17,6 +17,7 @@ class Plugin {
 	 * @var  array  of hooks to listen for
 	 */
 	protected static $_hooks = array(
+		'beforeFork',
 		'beforePerform',
 		'afterPerform',
 		'onFailure'
